@@ -1,0 +1,260 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo css */
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 40%;
+    border: 2px solid darkgreen;
+    border-radius: 35px;
+}
+
+/* Navbar css */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.3) url('../images/bg2.jfif');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: rgb(147, 165, 42); */
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 25px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    color: red;
+}
+
+/* Sign in and login css */
+
+.addmember{
+    width: 50%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: rgb(47, 218, 25); */
+}
+
+.sign{
+    background: #feaaaa ;
+    /* color: white !important; */
+}
+
+.sign:hover{
+    background-color: rgb(154, 224, 154);
+    color: white;
+    cursor: pointer;
+}
+
+.log{
+    background: #feaaaa;
+}
+
+.log:hover{
+    background-color: rgb(236, 238, 131);
+    color: white;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px;
+    font-size: 1rem;
+    margin: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(87, 2, 2);
+    /* background: lightyellow; */
+    /* color: mediumvioletred; */
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+/*.btn:hover{
+    color: rgb(8, 78, 18);
+    background-color: yellow;
+}*/
+
+/* Section css */
+
+section.secondsection {
+    background: #daece0;
+}
+
+.firstsection{
+    height: 90vh;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 80%;
+    margin: auto;
+    height: 85%;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainhead{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.para1{
+    font-size: 25px;
+}
+
+.read {
+    background-color: #63db68f5;
+    color: white;
+}
+
+.read:hover{
+    background-color: chocolate;
+    color: aqua;
+    cursor: pointer;
+}
+
+.watch{
+    background-color: #63db68f5;
+    color: azure;
+   
+}
+
+.watch:hover{
+    background-color: rgb(241, 163, 241);
+    /* color: rgb(20, 9, 78); */
+    cursor: pointer;
+}
+
+/* Second Section css */
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+.display1{
+    font-size: 35px;
+}
+
+/* Content css */
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* max-width: 100%; */
+    margin: auto;
+    flex-direction: column;
+}
+
+/* Firstcontent css */
+
+.firstcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid #db1499;
+    border-radius: 20px;
+    width: 90%;
+    /* background: #f2f2f2; */
+    margin: 10px;
+}
+
+img.imgfluid {
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.head2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.para2{
+    font-size: 18px;
+}
+
+.firsthead{
+    padding: 15px;
+}
+
+.first{
+    background: #f8d7d9bd;
+}
+
+/* Second Content css */
+
+.second{
+    flex-direction: row-reverse;
+    background: #daecaf66;
+}
+
+/* Third content css */
+.third{
+    background: #ffe6d1;
+}
+
+/* Footer css */
+.text-center{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}

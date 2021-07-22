@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Design |</title>
+
+    <!--css section-->
+    <link rel="stylesheet" href="{% static 'css/blogcss/ckt.css'%}">
+
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></div>
+            <li><a href="/"> Home</a></li>
+            <li><a href="about"> About us</a></li>
+            <li><a href="blog"> Blogs</a></li>
+            <li><a href="contact"> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--section-->
+    <section class="content">
+        <div class="specdata">
+            <!--card 1-->
+            <div class="card ">
+                <img class="imgfluid" src="{% static 'images/blogimg/ckt/easyeda.png' %}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Easy Eda Tutorial</h5>
+                    <p class="paracircuit">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos laborum ab officiis nobis natus explicabo eveniet magni, odio modi.</p>
+                    <button class="btn"><a class="dis"href="circuit-design/easyeda">Go to Article</a></button>
+                </div>
+            </div>
+
+            <!--card 2-->
+            <div class="card ">
+                <img class="imgfluid" src="{% static 'images/blogimg/ckt/circuitmaker.jfif' %}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Ultrasonic sensor with arduino</h5>
+                    <p class="paracircuit">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos laborum ab officiis nobis natus explicabo eveniet magni, odio modi.</p>
+                    <button class="btn"><a class="dis"href="circuit-design/circuitmaker">Go to Article</a></button>
+                </div>
+            </div>
+
+            <!--Information display-->
+            <h6 class="info"> Currently this page is incomplete and under-construction</h6>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-center">
+            Copyright &copy; 2021 - All rights reserved @ www.practicalelectronics.com
+        </p>
+    </footer>
+</body>
+</html>

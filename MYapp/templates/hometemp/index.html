@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Practical Electronics</title>
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></div>
+            <li><a href="/"> Home</a></li>
+            <li><a href="about"> About us</a></li>
+            <li><a href="blog"> Blogs</a></li>
+            <li><a href="contact"> Contact Us</a></li>
+        </ul>
+        <div class="addmember">
+            <button class="btn sign btn-sm"> <a href="#">Sign in</a> </button>
+            <button class="btn log btn-sm"> <a href="#">Login  </a> </button> 
+        </div>
+    </nav>
+
+    <!-- First Section -->
+    <section class="background firstsection">
+        <div class="box">
+            <div class="firsthalf">
+                <h1 class="mainhead">
+                    Welcome to Practical Electronics
+                </h1>
+                <p class="para1">
+                    Explore the real and practical electronics, with verified projects. 
+                </p>
+                <div class="buttons">
+                    <button class="btn read btn-sm"> <a href="blog">Read Blogs  </a></button>
+                    <button class="btn watch btn-sm"><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Watch Vedios</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Section-->
+    <section class="secondsection">
+        <div class="box2">
+            <div class="head1">
+                <h1 class="display1">
+                    Features of Practical Electronics
+                </h1>
+            </div>
+            <div class="content">
+                <!--First Content-->
+                <div class="firstcontent first">
+                    <div class="firsthead">
+                        <h4 class="head2">Explore datasheet </h4>
+                        <p class="para2">
+                            Read Datasheet of the components before project, explore its pin diagram.
+                            Get information of the components in details.
+                        </p>
+                    </div>
+                    <div class="thumbnail1">
+                        <img class="imgfluid" src="{% static 'images/homeimg/datasheet.jpg' %}" alt="datasheetimg">
+                    </div>
+                </div>
+                <!--Second Content-->
+                <div class="firstcontent second">
+                    <div class="firsthead">
+                        <h4 class="head2">DIY Projects </h4>
+                        <p class="para2">
+                            Read datasheet select verified project, do it your-self and gain experience. Do more projects and gain more experience.
+                        </p>
+                    </div>
+                    <div class="thumbnail1">
+                        <img class="imgfluid" src="{% static 'images/homeimg/diy.jpg' %}" alt="diy img">
+                    </div>
+                </div>
+                <!-- Third Content -->
+                <div class="firstcontent third">
+                    <div class="firsthead">
+                        <h4 class="head2">Guidance </h4>
+                        <p class="para2">
+                            Think an idea, try to solve it if you face any difficuilty in solving, feel free to ask about it. 
+                            (Go to about for more info)
+                        </p>
+                    </div>
+                    <div class="thumbnail1">
+                        <img class="imgfluid" src="{% static 'images/homeimg/guid.jfif' %}" alt="guidance img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p class="text-center">
+            Copyright &copy; 2021 - All rights reserved @ www.practicalelectronics.com
+        </p>
+    </footer>
+</body>
+</html>

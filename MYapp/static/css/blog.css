@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.blogbg{
+    background: rgba(0, 0, 0, -1) url('../images/blogimg1.jpg') no-repeat;
+    background-size: cover;
+}
+
+/* Navbar css */
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 25px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.979);
+}
+
+.nav-list li a:hover{
+    color: rgb(255, 8, 0);
+}
+
+/* Logo css */
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    border: 2px solid darkgreen;
+    border-radius: 35px;
+}
+
+/* Navbar css end */
+
+/* Section css */
+
+.display1 {
+    text-align: center;
+    margin: 45px;
+    border: 5px solid red;
+    border-radius: 30px;
+    background: #fffefe;
+    padding: 10px 20px;
+    width: 30%;
+    margin-left: 35rem;
+}
+
+.container {
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-top: 25px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 20rem;
+    height: 25rem;
+    /* border: 3px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card1{
+    border: 3px solid green;
+    background: hsla(0, 0%, 100%, 0.877);
+}
+
+.card2{
+    border: 3px solid rgb(191, 233, 7);
+    background: hsla(0, 0%, 100%, 0.877);
+}
+
+.card3{
+    border: 3px solid rgb(5, 18, 139);
+    background: hsla(0, 0%, 100%, 0.877);
+}
+
+/* Datasheet css */
+
+.data {
+    width: 200px;
+    height: 195px;
+    margin-left: 40px;
+}
+
+.dataic{
+    font-size: 20px;
+    margin-top: 55px;
+}
+
+.paradata{
+    margin-top: 10px;
+}
+
+/* Adruino css */
+
+.adruino{
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.paraadruino{
+    margin-top: 15px;
+}
+
+/* Circuit design */
+.circuit{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.paracircuit{
+    margin-top: 15px;
+    padding: 2px;
+}
+
+.btn {
+    background: #ffbcb8;
+    width: 100%;
+    margin: 25px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+a.dis {
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: rgb(153, 241, 153);
+}
+/* Section css end */
+
+/* Footer css */
+
+.text-center{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}

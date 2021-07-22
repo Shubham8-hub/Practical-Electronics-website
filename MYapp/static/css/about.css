@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar css */
+
+.navbar {
+    background: #e8e8e8;
+}
+
+.all {
+    height: 900px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 25px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgba(33, 4, 163, 0.966);
+}
+
+.nav-list li a:hover{
+    color: green;
+}
+
+/* Logo css */
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    border: 2px solid darkgreen;
+    border-radius: 35px;
+}
+
+/* Background css */
+
+.background{
+    background: rgba(0, 0, 0, -1) url('../images/note1.jfif');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+/* Navbar css end */
+
+/* Section css */
+
+.content {
+    margin-top: 25%;
+}
+
+.aboutcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 5px dotted green; */
+    border-radius: 5px;
+    width: 30%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+p {
+    padding: 5px;
+}
+
+/* Section css end */
+
+/* Footer css */
+
+.text-center{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}

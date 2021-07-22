@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar css */
+
+.navbar{
+    background: rgb(152, 247, 114);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 25px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.979);
+}
+
+.nav-list li a:hover{
+    color: rgb(233, 2, 2);
+}
+
+/* Logo css */
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    border: 2px solid darkgreen;
+    border-radius: 35px;
+}
+
+/* Navbar css end */
+
+/* Section css */
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.specdata {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* card css */
+
+.imgfluid {
+    width: 195px;
+    height: 150px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 15px 10px;
+    margin: 15px 140px;
+}
+
+button.btn {
+    margin: 10px 0px;
+    background: #fb9750;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background: rgb(93, 238, 93);
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.paracircuit {
+    margin: 5px 0px;
+    font-size: 16px;
+}
+
+a.dis {
+    text-decoration: none;
+    color: white;
+}
+
+.card-body {
+    margin-left: 25px;
+}
+
+.info {
+    font-size: 20px;
+    margin: 25px 20px;
+    text-align: center;
+}
+
+/* section css ended */
+
+/* Footer css */
+
+.text-center{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}

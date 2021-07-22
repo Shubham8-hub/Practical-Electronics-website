@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Electronics | Blogs</title>
+
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="{% static 'css/blog.css'%}">
+</head>
+<body>
+    <div class="blogbg">
+        <!--Navbar section-->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></div>
+                <li><a href="/"> Home</a></li>
+                <li><a href="about"> About us</a></li>
+                <li><a href="blog"> Blogs</a></li>
+                <li><a href="contact"> Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section class="first">
+            <h1 class="display1">Explore your favourite Blogs !!</h1>
+
+        <!--Blogs card section-->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card card1">
+                            <img class="data" src="{% static 'images/homeimg/card-datasheet.png' %}" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title dataic">Datasheet</h5>
+                                <p class="paradata">Read datasheet of different IC's, Modules and Board's</p>
+                                <button class="btn"><a class="dis"href="blog/dataSheet">Go to Article</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card2">
+                            <img src="{% static 'images/homeimg/card-adruino.jfif' %}" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title adruino">Arduino</h5>
+                                <p class="paraadruino" >Explore arduino projects with different sensors and modules </p>
+                                <button class="btn"><a class="dis"href="blog/Adruino">Go to Article</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card3">
+                            <img src="{% static 'images/homeimg/card-pcb-design.jfif' %}" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title circuit">Circuit Design</h5>
+                                <p class="paracircuit">Get the ways to design your custom PCB with modern software</p>
+                                <button class="btn"><a class="dis"href="blog/circuit-design">Go to Article</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="text-center">
+            Copyright &copy; 2021 - All rights reserved @ www.practicalelectronics.com
+        </p>
+    </footer>
+</body>
+</html>

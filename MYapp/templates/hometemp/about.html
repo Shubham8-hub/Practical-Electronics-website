@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Electronics | About us</title>
+
+    <!--css files-->
+    <link rel="stylesheet" href="{% static 'css/about.css'%}">
+</head>
+<body>
+    <div class="all background">
+        <nav class="navbar ">
+            <ul class="nav-list">
+                <div class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></div>
+                <li><a href="/"> Home</a></li>
+                <li><a href="about"> About us</a></li>
+                <li><a href="blog"> Blogs</a></li>
+                <li><a href="contact"> Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!--Section -->
+        <section class="content">
+            <div class="aboutcontent">
+                <h2 class="head1">Hi Reader</h2>
+                <p>
+                    Welcome to practical electronics.  It is a platform for electronics hobistic to do project with proper guidance. 
+                    There are many platform for electronics but to get details of it is very difficult to use. Practical Electronics will help to get touch with latest technology.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus possimus minima explicabo aspernatur molestiae error, accusamus, fugit omnis aperiam illum unde repudiandae dolores doloribus neque veritatis perspiciatis nisi ipsam, quas ratione eos obcaecati facilis laborum. Eos officiis similique maxime, illum, cumque facilis omnis, enim quasi temporibus excepturi velit asperiores adipisci!</p>
+                <p>
+                    It's an open platform where you can share your ideas with others. 
+                </p>
+                <p>
+                    -Practical Electronics
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p class="text-center">
+            Copyright &copy; 2021 - All rights reserved @ www.practicalelectronics.com
+        </p>
+    </footer>
+</body>
+</html>

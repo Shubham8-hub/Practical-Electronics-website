@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Electronics | Contact us</title>
+
+    <!-- contact css-->
+    <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+</head>
+<body>
+    <div class="background">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <div class="logo"><img src="{% static 'images/logo.png' %}" alt="logo"></div>
+                <li><a href="/"> Home</a></li>
+                <li><a href="about"> About us</a></li>
+                <li><a href="blog"> Blogs</a></li>
+                <li><a href="contact"> Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>{{ message }}</strong>   
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        <section class="contact">
+            <h3 class="text">Contact us</h3>
+            <form action="/contact" method="post">
+            {% csrf_token %}
+                <div class="detail">
+                    <div class="name cmn">
+                        <h5>Name:-</h5>
+                        <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="emailid cmn">
+                        <h5>Email:-</h5>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email">
+                    </div>
+                    <div class="phone cmn">
+                        <h5>Phone no:-</h5>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your Phone number">
+                    </div>
+                    <div class="member cmn">
+                        <h5>Unique ID</h5>
+                        <input type="text" name="member" id="member" placeholder="Enter your Unique ID">
+                    </div>
+                    <div class="subject cmn">
+                        <h5>Subject</h5>
+                        <input type="text" name="subject" id="subject" placeholder="Write  Subject">
+                    </div>
+                    <div class="message cmn">
+                        <h5>Text your query/ problem/ others</h5>
+                        <textarea name="msg" id="msg" cols="75" rows="10" placeholder="Elaborate your query/ problem/ others"></textarea>
+                    </div>
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p class="text-center">
+            Copyright &copy; 2021 - All rights reserved @ www.practicalelectronics.com
+        </p>
+    </footer>
+</body>
+</html>
